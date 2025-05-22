@@ -2,15 +2,9 @@
 function atualizaHora() {
 const horaAtual = new Date().getHours();
 
-console.log(horaAtual);
-
 const minutoAtual = new Date().getMinutes();
 
-console.log(minutoAtual);
-
 const segundoAtual = new Date().getSeconds();
-
-console.log(segundoAtual)
 
 const campoHora = document.querySelector("#hour")
 campoHora.textContent = String(horaAtual).padStart(2, "0");
@@ -23,7 +17,9 @@ campoSegundos.textContent = String(segundoAtual).padStart(2, "0");
 
 }
 
-
 setInterval(function() {
     atualizaHora();
 }, 1000);
+
+let background = document.querySelector("body");
+
