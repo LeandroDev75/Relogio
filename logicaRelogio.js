@@ -1,5 +1,5 @@
 
-
+function atualizaHora() {
 const horaAtual = new Date().getHours();
 
 console.log(horaAtual);
@@ -21,5 +21,9 @@ campoMinutos.textContent = String(minutoAtual).padStart(2, "0");
 const campoSegundos = document.querySelector("#sec");
 campoSegundos.textContent = String(segundoAtual).padStart(2, "0");
 
+}
 
 
+setInterval(function() {
+    atualizaHora();
+}, 1000);
