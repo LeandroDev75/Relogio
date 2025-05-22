@@ -4,8 +4,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
+position: relative;
 
+}
 
+main {
+    z-index: 1;
 }
 
 .containerhorario {
@@ -31,4 +35,14 @@ font-weight: bold;
     font-size: 4.7vw;
     padding: 0 5px 0 5px;
 
+}
+
+#imagensAleatorias {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }

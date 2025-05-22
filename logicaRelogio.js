@@ -21,5 +21,33 @@ setInterval(function() {
     atualizaHora();
 }, 1000);
 
-let background = document.querySelector("body");
+function geraIndice () {
+
+const imagens = [
+    "images/dia1.jpg",
+    "images/dia2.jpg",
+    "images/dia3.jpg",
+    "images/dia4.jpg",
+    "images/dia5.jpg",
+    "images/dia6.jpg"
+];
+
+let geraIndicealeatorio = Math.floor(Math.random() * imagens.length);
+
+let background = document.getElementById("imagensAleatorias");
+
+background.src = imagens[geraIndicealeatorio];
+
+}
+
+setInterval(function() {
+    geraIndice();
+}, 5000);
+
+
+
+
+
+
+
 
