@@ -11,8 +11,8 @@ height: 100vh;
 .containerhorario {
 
 display: flex;
-width: 20rem;
-height: 6rem;
+width: 25vw;
+height: 7.5vw;
 background-color: aquamarine;
 justify-content: center;
 align-items: center;
@@ -21,14 +21,14 @@ align-items: center;
 
 .relogio {
 
-font-size: 60px;
+font-size: 4.7vw;
 font-weight: bold;
 
 }
 
 .divisor {
 
-    font-size: 60px;
+    font-size: 4.7vw;
     padding: 0 5px 0 5px;
 
 }
